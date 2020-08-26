@@ -24,7 +24,7 @@ function App() {
   //console.log(message);
   const sendMessage = event =>{
     event.preventDefault();
-    if(input != "" && user !="" && user != null){
+    if(input !== "" && user !=="" && user !== null){
       db.collection('message').add(
         {
           user:user,
